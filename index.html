@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Frontend Mentor Advice generator app challenge"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Advice generator app</title>
+
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <main class="advice-generator">
+      <section class="advice-generator__section">
+        <h1 class="advice-generator__title">
+          Advice #<span id="adviceNumber" class="advice-generator__id"
+            ><!-- Advice ID goes here --></span
+          >
+        </h1>
+        <p id="adviceText" class="advice-generator__text">
+          <!-- Advice text goes here -->
+        </p>
+        <p class="advice-generator__divider"><!-- Pattern divider --></p>
+        <button id="diceButton" class="advice-generator__dice-button">
+          <img
+            id="diceImage"
+            class="advice-generator__dice-image"
+            src="./images/icon-dice.svg"
+            alt="Dice image for generating new advice"
+          />
+        </button>
+      </section>
+    </main>
+  </body>
+</html>

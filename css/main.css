@@ -1,0 +1,126 @@
+/* Fonts */
+.manrope-extra-bold {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Vars */
+:root {
+  /* Colors */
+  /* Primary */
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  /* Neutral */
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+}
+
+/* Reset styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile styles */
+html {
+  font-family: "Manrope", sans-serif;
+}
+body {
+  background-color: var(--dark-blue);
+}
+
+.advice-generator {
+  margin-top: 7.5rem;
+  padding: 0 16px;
+}
+.advice-generator__section {
+  background-color: var(--dark-grayish-blue);
+  box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
+  border-radius: 10px;
+  text-align: center;
+  padding: 2.5rem 24px 0;
+  position: relative;
+  max-width: 24.5625rem;
+  margin: 0 auto 3.75rem;
+}
+.advice-generator__title {
+  margin: 0;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 0.6875rem;
+  line-height: 0.9375rem;
+  letter-spacing: 3.45714px;
+  color: var(--neon-green);
+}
+.advice-generator__text {
+  margin: 1.5rem 0;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 2.0625rem;
+  letter-spacing: -0.257143px;
+  color: var(--light-cyan);
+}
+.advice-generator__divider {
+  height: 1rem;
+  background-image: url("../images/pattern-divider-mobile.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.advice-generator__dice-button {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto;
+  background: var(--neon-green);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: -2rem;
+}
+.advice-generator__dice-image {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+  .advice-generator {
+    margin-top: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  .advice-generator__section {
+    border-radius: 15px;
+    padding: 3rem 48px 0;
+    max-width: 33.75rem;
+    margin: 0 0 2rem;
+  }
+  .advice-generator__title {
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    letter-spacing: 4.08571px;
+  }
+  .advice-generator__text {
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.75rem;
+    line-height: 2.375rem;
+    letter-spacing: -0.3px;
+  }
+  .advice-generator__divider {
+    background-image: url("../images/pattern-divider-desktop.svg");
+    margin-bottom: 0.5rem;
+  }
+}
